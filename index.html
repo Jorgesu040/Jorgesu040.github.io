@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href=".\MEDIA\IMG\LogoAmmunation.ico">
+	<meta charset="utf-8">
+	<title>Ammunation</title>
+	<link rel="stylesheet" type="text/css" href="INDEX.css">
+	<script type="text/javascript" src="INDEX.js" defer></script>
+</head>
+
+<body onload="inicio()">
+	<div class="overlay" id="overlay"></div>
+		<nav>
+			<div id="fila1">
+				<div class="barraLadoIzquierdo">
+					<img id="logoAmmuNation" src=".\MEDIA\IMG\LogoAmmunation.jpg">
+					<h1 id="nombreAmmunation">AMMU★NATION</h1>
+				</div>
+				<div class="barraLadoDerecho">
+					<div class="subbarraLadoDerecho" id="dropdown-menu1" onmouseover="dropdownFunction1()"
+						onmouseout="noDropdownFunction1()">
+						<a href="#headerTiposArma">TIPOS DE ARMAS</a>
+					</div>
+					<div class="subbarraLadoDerecho" id="dropdown-menu2" onmouseover="dropdownFunction2()"
+						onmouseout="noDropdownFunction2()">
+						<a href="#headerTiposArma">EQUIPAMIENTO TACTICO</a>
+					</div>
+					<div class="subbarraLadoDerecho">
+						<button onclick="mostrarSobreNosotros()" id="sobreNosotros">SOBRE NOSOTROS</button>
+					</div>
+					<div id="sobreNosotrosContenedor">
+						<div id="sobreNosotrosTexto">
+							<div id="sobreNosotrosNav">
+								<span>SOBRE NOSOTROS</span>
+								<button id="cerrarSobreNosotros" onclick="cerrarNosotros()">&#10005;</button>
+							</div>
+							<h2>HOLA!&#128075;, SOMOS AMMU★NATION</h2>
+							<p>En Ammu-Nation encontrarás todo lo que necesitas para cazar, pescar, acampar y sobrevivir en el mundo
+								salvaje. Con más de 10.000 artículos en stock, Ammu-Nation es la tienda de armas más grande del mundo.
+								¡Visítanos en cualquiera de nuestras 24 sucursales en todo el país y nuestro sitio web!</p>
+							<p>¡Nuestro personal amable y conocedor está aquí para ayudarlo a obtener lo que necesita para su próxima
+								aventura!</p>
+							<p>¡Ammu-Nation, protegiendo a los estadounidenses de ellos mismos desde 1945!</p>
+						</div>
+						<main id="mapaYvideo">
+								<iframe src="https://www.youtube.com/embed/QdBZY2fkU-0" title="Grand Theft Auto VI Trailer 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" allowfullscreen></iframe>
+								<iframe src="https://gta-5-map.com?locationIds=12627"  style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</main>
+					</div>
+				</div>
+			</div>
+			<div id="fila2">
+				<div id="dropdown-armas" onmouseover="dropdownFunction1()" onmouseout="noDropdownFunction1()">
+					<ul>
+						<li><a href=".\HTML\fusiles.html">FUSILES/SUBFUSILES</a></li>
+						<li><a href=".\HTML\pistolas.html">PISTOLAS</a></li>
+						<li><a href=".\HTML\escopetas.html">ESCOPETAS</a></li>
+						<li><a href=".\HTML\explosivos.html">ARMAS EXPLOSIVAS</a></li>
+					</ul>
+				</div>
+				<div id="dropdown-tactico" onmouseover="dropdownFunction2()" onmouseout="noDropdownFunction2()">
+					<ul>
+						<li><a href=".\HTML\explosivos.html">EXPLOSIVOS</a></li>
+						<li><a href=".\HTML\extras.html">EXTRAS</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	<div class="overlay">
+		<div id="novedades">
+			<div class="flex-novedades">
+				<img onclick="novedadesAtras()" id="novedadesBotonAtras" src=".\MEDIA\IMG\backboton.png">
+			</div>
+			<div class="flex-novedades" class="novedadesAnimado">
+				<div id="mensajeNovedades">
+					<h1 id="novedadesTexto">Nuevo lanzamiento de tiendas en GTA 6</h1>
+					<p id="novedadesSubTexto">- Ammunation, Rockstar Games</p>
+				</div>
+			</div>
+			<div class="flex-novedades">
+				<img id="novedadesBotonDelante" onclick="novedadesDelante()" src=".\MEDIA\IMG\backboton.png">
+			</div>
+		</div>
+
+		<div id="destacadosTitulo">
+			<h2>DESTACADOS DE HOY</h2>
+		</div>
+
+		<div class="contenedorGaleria">
+			<div id="galeriaGrandeCentrada">
+				<div class="centrarGaleria" id="centrarCuadroGrandeGaleria" >
+					<div class="textoDestacadoGrande">
+						<a href="#" class="botonDestacados">Comprar</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="centrarGaleria">
+				<div class="galeriaDestacados">
+					<div class="subGaleriaDestacados" id="galeriaIMG1" >
+						<div class="textoDestacado">
+							<a href="#" class="botonDestacados">Comprar</a>
+						</div>
+					</div>
+					<div class="subGaleriaDestacados" id="galeriaIMG2" >
+						<div class="textoDestacado">
+							<a href="#" class="botonDestacados">Comprar</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="galeriaDestacados">
+					<div class="subGaleriaDestacados" id="galeriaIMG3" >
+						<div class="textoDestacado">
+							<a href="#" class="botonDestacados">Comprar</a>
+						</div>
+					</div>
+					<div class="subGaleriaDestacados" id="galeriaIMG4" >
+						<div class="textoDestacado">
+							<a href="#" class="botonDestacados">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tiposArmaTitulo" id="headerTiposArma">
+			<h2>TIPOS DE ARMA</h2>
+		</div>
+
+		<div id="tiposArmaContenedor">
+			<div class="tiposArmaImagenes" id="tipoArmaImagen1" onclick="clickArma(1)" onmouseover="highlightArma(1)"
+				onmouseleave="noHighlightArma(1)">
+				<div class="infoCarrusel">
+					<span class="tipoArmaCarrusel">FUSILES</span>
+					<div class="comprarEinformacion">
+						<a href=".\HTML\fusiles.html" class="botonArmaCarrusel">Comprar</a>
+						<a href=".\HTML\fusiles.html" class="masInfoArmasCarrusel">Mas informacion</a>
+					</div>
+				</div>
+				<img src=".\MEDIA\IMG\Carrusel\rifles.jpeg" class="imagenesCarrusel">
+			</div>
+			<div class="tiposArmaImagenes" id="tipoArmaImagen2" onclick="clickArma(2)" onmouseover="highlightArma(2)"
+				onmouseleave="noHighlightArma(2)">
+				<div class="infoCarrusel">
+					<span class="tipoArmaCarrusel">PISTOLAS</span>
+					<div class="comprarEinformacion">
+						<a href=".\HTML\pistolas.html" class="botonArmaCarrusel">Comprar</a>
+						<a href=".\HTML\pistolas.html" class="masInfoArmasCarrusel">Mas informacion</a>
+					</div>
+				</div>
+				<img src=".\MEDIA\IMG\Carrusel\pistolas.jpeg" class="imagenesCarrusel">
+			</div>
+			<div class="tiposArmaImagenes" id="tipoArmaImagen3" onclick="clickArma(3)" onmouseover="highlightArma(3)"
+				onmouseleave="noHighlightArma(3)">
+				<div class="infoCarrusel">
+					<span class="tipoArmaCarrusel">ESCOPETAS</span>
+					<div class="comprarEinformacion">
+						<a href=".\HTML\escopetas.html" class="botonArmaCarrusel">Comprar</a>
+						<a href=".\HTML\escopetas.html" class="masInfoArmasCarrusel">Mas informacion</a>
+					</div>
+				</div>
+				<img src=".\MEDIA\IMG\Carrusel\escopetas.jpeg" class="imagenesCarrusel">
+			</div>
+			<div class="tiposArmaImagenes" id="tipoArmaImagen4" onclick="clickArma(4)" onmouseover="highlightArma(4)"
+				onmouseleave="noHighlightArma(4)">
+				<div class="infoCarrusel">
+					<span class="tipoArmaCarrusel">EXPLOSIVAS</span>
+					<div class="comprarEinformacion">
+						<a href=".\HTML\explosivos.html" class="botonArmaCarrusel">Comprar</a>
+						<a href=".\HTML\explosivos.html" class="masInfoArmasCarrusel">Mas informacion</a>
+					</div>
+				</div>
+				<img src=".\MEDIA\IMG\Carrusel\explosivas.jpeg" class="imagenesCarrusel">
+			</div>
+		</div>
+		<div>
+			<ul id="botonesArmas">
+				<li id="botonArma1" onclick="clickArma(1)"></li>
+				<li id="botonArma2" onclick="clickArma(2)"></li>
+				<li id="botonArma3" onclick="clickArma(3)"></li>
+				<li id="botonArma4" onclick="clickArma(4)"></li>
+			</ul>
+		</div>
+
+		<!-- Juego descuentos -->
+		<div class="tiposArmaTitulo" >
+			<h2>JUEGA Y GANA DESCUENTOS</h2>
+		</div>
+
+		<div id="juegoDescuentos">
+			<div id="elementosEnPantalla">
+				<div id="juegoDescuentosGlobos">
+					<img src="" alt="Image 1" class="globosJuego"
+						onclick="clickGlobo(0)">
+					<img src="" alt="Image 2" class="globosJuego"
+						onclick="clickGlobo(1)">
+					<img src="" alt="Image 3" class="globosJuego"
+						onclick="clickGlobo(2)">
+					<img src="" alt="Image 4" class="globosJuego"
+						onclick="clickGlobo(3)">
+					<img src="" alt="Image 5" class="globosJuego"
+						onclick="clickGlobo(4)">
+					<img src="" alt="Image 6" class="globosJuego"
+						onclick="clickGlobo(5)">
+					<img src="" alt="Image 7" class="globosJuego"
+						onclick="clickGlobo(6)">
+					<img src="" alt="Image 8" class="globosJuego"
+						onclick="clickGlobo(7)">
+					<img src="" alt="Image 9" class="globosJuego"
+						onclick="clickGlobo(8)">
+				</div>
+				<div id="juegoDescuentosPajaro">
+					<img src=".\MEDIA\IMG\juegoDescuentos\duck.png" alt="Image 1" class="pajaroJuego" 
+						onclick="clickPajaro()">
+				</div>
+			</div>
+			<div id="juegoDescuentosTexto">
+
+				<div id="menuJuego">
+					<span class="seccionJuego">SHOOT & EARN</span>
+					<p>¿Te gustan los descuentos? ¿Te gustan los juegos? Juega a nuestro juego y gana descuentos en tus
+						compras. ¡No te lo pierdas!</p>
+					<div>
+						<button class="juegoDescuentosBoton" onclick="juegoDescuentos(1)">JUGAR</button>
+						<button class="juegoDescuentosBoton" onclick="mostrarReglas(1)">REGLAS</button>
+					</div>
+				</div>
+
+				<div id="reglas">
+					<span class="seccionJuego">REGLAS</span>
+					<p>¡Dispara a los globos antes de que se acabe el tiempo! Con el click izquierdo pulsa sobre los globos
+						para dispararlos </p>
+					<p>¿Parace fácil verdad? Pues estate atento a los globos rojos que te darán puntos extra. </p>
+					<p>Ademas, una vez aparecerá un parajo volando con AUN MÁS PUNTOS ¡Pero cuidado! Si disparas a las minas
+						perderas puntos y a los 3 fallos perderas el descuento. ¡Suerte!</p>
+					<p>(Globos rojos :<span class="scorePositivo">+100pts</span>, Globos azules :<span
+							class="scorePositivo">+50pts</span>, Globos amarillos :<span
+							class="scorePositivo">+20pts</span>, Minas explosivas :<span
+							class="scoreNegativo">-100pts</span>)</p>
+					<div>
+						<button class="juegoDescuentosBoton" onclick="volverAtras(0)">VOLVER</button>
+						<button class="juegoDescuentosBoton" onclick="mostrarPuntuaciones(2)">PUNTUACIONES</button>
+					</div>
+				</div>
+
+				<div id="puntuaciones">
+					<span class="seccionJuego">PUNTUACIONES</span>
+					<ol>
+						<li>40% - 2000 puntos</li>
+						<li>30% - 1500 puntos</li>
+						<li>20% - 800 puntos</li>
+						<li>10% - 500 puntos</li>
+					</ol>
+					<p><i>(Valores inferiores a 500 reciben una palmadita en la espalda)</i></p>
+					<div>
+						<button class="juegoDescuentosBoton" onclick="volverAtras(1)">VOLVER</button>
+						<button class="juegoDescuentosBoton" onclick="mostrarInicio(0)">INICIO</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="interfaz_juego">
+				<div id="juegoDescuentosPuntuacion">
+					<h3>Puntuacion: </h3>
+					<span id="score">0</span>
+				</div>
+				<div id="juegoDescuentosTiempo">
+					<h3>Tiempo restante:</h3>
+					<div id="progressBar">
+						<div id="progressBar-child"></div>
+					</div>
+				</div>
+				<div id="juegoDescuentosVidas">
+					<h3>Vidas restantes:</h3>
+					<div id="vidas">
+						<img src=".\MEDIA\IMG\juegoDescuentos\pixel-heart.png" alt="vida1" class="vidasJuego">
+						<img src=".\MEDIA\IMG\juegoDescuentos\pixel-heart.png" alt="vida2" class="vidasJuego">
+						<img src=".\MEDIA\IMG\juegoDescuentos\pixel-heart.png" alt="vida3" class="vidasJuego">
+					</div>
+				</div>
+			</div>
+
+			<div id="resultadosJuego">
+				<span id="msjFin">¡Bien jugado!</span>
+				<div id="resultadosJuegoPuntuacion">
+					<h3>Tu puntuación a sido</h3>
+					<span id="scoreFinal" class="scoreClass">0</span>
+				</div>
+
+				<div id="decuentoObtenido">
+					<h3>Has obtenido un descuento del</h3>
+					<span id="scoreFinal-descuento">0%</span>
+					<p id="mensajeFinal-descuento">¡No olvides usarlo en tu próxima compra!</p>
+				</div>
+
+				<div id="botonesResultados">
+					<button class="juegoDescuentosBoton" onclick="resetearJuego()">RECLAMAR Y VOLVER AL INICIO</button>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="formularioTitulo">
+			<h3>SUSCRIBETE A NUESTRA RESVISTA DE ARMAS</h3>
+		</div>
+
+		<div id="formularioDeDescuento">
+			<div id="usuarioRegistrado">
+				<span class="seccionNewsletter">¡GRACIAS POR REGISTRARTE!</span>
+				<p>¡Ya estas registrado en nuestra revista de armas! ¡No olvides usar tu descuento en tu proxima compra!<br>
+				<p>Nos vemos pronto ;)</p>
+			</div>
+			<div id="formularioDeDescuentoExplicacion">
+				<span class="seccionNewsletter">NEWSLETTER Y DESCUENTOS</span>
+				<p>¡Suscríbete a nuestra revista de armas y consigue un descuento del 10% en tu próxima compra!</p>
+				<p>¡Ademas, podrás estar al tanto de todas las novedades en armas y ofertas de nuestra tienda! ¡Lo tiene todo!</p>
+			</div>
+			<form id="formulario">
+				<span>Nombre:</span>
+				<input type="text" id="nombreDescuento" placeholder="Introduzca su nombre..." required>
+				
+				<span>Apellido:</span>
+				<input type="text" id="apellidoDescuento" placeholder="Introduzca su apellido..." required>
+				
+				<span>Sexo:</span>
+				<select id="sexoDescuento">
+					<option value="default">Seleccione una opcion...</option>
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+				</select>
+				
+				<span>Email:</span>
+				<input type="email" id="emailDescuento" placeholder="Introduzca su correo..." required>			
+				<div class="inline-elements-descuento">
+					<input type="checkbox" id="terminosYcondiciones" name="terminos" required>
+					<p>Acepto los terminos y condiciones</p>
+
+				</div>
+				<div id="botonesFormulario">
+					<input type="button" onclick="validarFormulario()" value="Registrarse">
+					<input type="reset" value="Borrar">
+				</div>
+			</form>
+		</div>
+
+		<footer>
+			<p>Copyright © 2023-2024 Ammunation (Jorge Matesanz). Todos los derechos reservados.</p>
+			<p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+			<p>Cualquier similitud con la vida real es pura coincidencia, todos los productos tienen caracter ficticio</p>
+		</footer>
+		
+
+		<button onclick="irArriba()" id="botonArriba">&#129045;</button>
+	</div>
+</body>
+</html>
