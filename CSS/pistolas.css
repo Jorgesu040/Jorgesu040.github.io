@@ -1,0 +1,471 @@
+body{
+
+    background-color:#212121;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*footer*/
+footer {
+  background-color: #212121;
+  color: #7A0E10;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.footer-links {
+  background-image:url(../MEDIA/MEDIA_PISTOLAS/IMG/IMG_INFO/FOOTER.png) ;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ff8519;
+  font-size: 25px;
+}
+
+.footer-text{
+  padding: 50px;
+  font-size: 24px;
+}
+
+.footer-link-block{
+  border-radius: 5%;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   
+}
+
+.footer-link-block:hover{
+  background-color:#7A0E10;
+}
+
+
+
+/*video*/
+
+.video {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+  }
+
+/*Barra de navegacion*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #7A0E10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 1000px; 
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7A0E10;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*bloques*/
+
+.carac{
+  color:red;
+}
+
+.comprar{
+  color:white;
+  background-color:red;
+  border-radius: 15%;
+  border: 2px solid red;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.comprar:hover{
+  background-color: #7A0E10;
+  color: white;
+  cursor: pointer;
+}
+
+#titulo{
+  color:#7A0E10;
+}
+
+.container {
+  display: flex;
+}
+
+.info {
+  border-radius: 5%;
+  width: 70%;
+  height: 300px;
+  margin: 5px;
+  padding: 10px;
+  background-image: url(../MEDIA/MEDIA_PISTOLAS/IMG/IMG_INFO/Fondo.jpeg);
+}
+
+.inf {
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  background: rgba(33, 33, 33, 0.5);
+  border-radius: 2%;
+}
+
+.inf-text {
+  color: white;
+}
+
+.precio {
+  border-radius: 5%;
+  width: 30%;
+  margin: 5px;
+  height: 300px;
+  padding: 10px;
+  background-image: url(../MEDIA/MEDIA_PISTOLAS/IMG/IMG_INFO/Precio.jpeg);
+}
+
+.valor{
+
+  padding: 25px;
+  font-size: 40px;
+ 
+}
+
+.prec {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: red;
+  font-size: 20px;
+}
+
+.estilo {
+    animation-name: estilo;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes estilo {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  
+  .siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .anterior:hover, .siguiente:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+ .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .numImg {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50;
+  }
+  
+  .header {
+  text-align: center;
+} 
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+ /* primer Slider */
+img {
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+}
+.imagen {
+    display: none;
+}
+
+
+.PRIMERO {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .botonInferior {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .botonInferior:hover {
+    background-color: #717171;
+  }
+
+ 
+
+  /* segundo Slider */
+
+  .img2 {
+    vertical-align: middle;
+}
+
+.imagen2 {
+    display: none;
+}
+
+.SEGUNDO{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .botonInferior2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .botonInferior2:hover {
+    background-color: #717171;
+  }
+  
+
+  /* tercer Slider */
+
+  .TERCERO {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.botonInferior3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .botonInferior3:hover {
+  background-color: #717171;
+}
+
+.img3 {
+  vertical-align: middle;
+}
+
+
+.imagen3 {
+  display: none;
+}
+
+/* cuarto Slider */
+
+.CUARTO{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.botonInferior4 {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .botonInferior4:hover {
+background-color: #717171;
+}
+
+.img4 {
+vertical-align: middle;
+}
+
+
+.imagen4 {
+display: none;
+}
+
+/* Quinto Slider */
+
+.QUINTO {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.botonInferior5 {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .botonInferior5:hover {
+background-color: #717171;
+}
+
+.img5 {
+vertical-align: middle;
+}
+
+
+.imagen5 {
+display: none;
+}
+
+/* Sexto Slider */
+
+.SEXTO {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.botonInferior6 {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .botonInferior6:hover {
+background-color: #717171;
+}
+
+.img6 {
+vertical-align: middle;
+}
+
+
+.imagen6 {
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial',Arial;
+    line-height: 1.6;
+    background-color:#7A0E10;
+    color: #fff;
+    margin: 0;
+}
+
+header {
+	/**** FUSILES ****/
+    background-color: #4F7CAC;
+    color:#FFFFFF;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+	/**** FUSILES ASALTO,SNIPER,SUBFUSIL,SEMI****/
+    background-color:#212121;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#inicio a {
+    font-weight: bold;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #4F7CAC;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+   
+.precios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.precios-table button {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #4F7CAC;
+}
+
+
+.precios-table th, .precios-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.precios-table th {
+    background-color: #4F7CAC;
+    color: #fff;
+}
+
+.precios-table tr:nth-child(even) {
+    background-color: #7A0E10;
+}
+
+.precios-table tr:hover {
+    background-color: #4F7CAC;
+}
+
+nav a:hover {
+	/**** Cambia el color del texto a un tono de azul más claro cuando se pasa el ratón sobre el enlace.****/
+    color: #4F7CAC;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    background-color: #212121;
+}
+
+h2 {
+	/**** Color títulos del texto****/
+    color: #4F7CAC;
+}
+
+section p {
+	/**** Color texto****/
+    color: #fff;
+}
+
+section img {
+    width: 1100px;
+    height: 350px;
+	object-fit: cover;
+    margin-bottom:15px;
+	
+}
+
+section a {
+    color: #4F7CAC;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+.imagen-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    
+    transition: transform 0.3s;
+}
+
+.precio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.imagen-container:hover img {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+}
+
+.imagen-container:hover .precio-overlay {
+    opacity: 1;
+}
+
+footer {
+    background-color: #4F7CAC;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#juego-container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#objetivo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    cursor: pointer;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+

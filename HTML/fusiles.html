@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fusiles de asalto</title>
+    <link rel="stylesheet" href="../CSS/fusiles.css">
+    <script type="text/javascript" src="../JS/fusiles.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>FUSILES</h1>
+
+
+    </header>
+
+    <nav id="inicio">
+
+        <!-- Enlace a la sección  -->
+        <a href="../INDEX.html"> INICIO</a>
+        <a href="./pistolas.html"> PISTOLAS</a>
+        <a href="./escopetas.html"> ESCOPETAS</a>
+        <a href="./explosivos.html">EXPLOSIVOS</a>
+        <a href="./extras.html"> EXTRAS</a>
+
+    </nav>
+
+    <hr>
+
+    <nav>
+
+        <!-- Enlace a la sección  -->
+        <a href="#asalto">Fusil de Asalto</a>
+
+        <!-- Enlace a la sección  -->
+        <a href="#precision">Fusil francotirador</a>
+
+        <!-- Enlace a la sección  -->
+        <a href="#Subfusiles">Subfusil</a>
+
+        <!-- Enlace a la sección -->
+        <a href="#semiautomático">Semiautomáticas</a>
+
+        <div>Carrito: <span id="cantidad-total"> 0</span>unidades </div>
+        <div>Precio: <span id="precio-total">0</span>euros</div>
+
+    </nav>
+
+    <section id="asalto">
+        <!-- Contenido de la sección de inicio -->
+        <h2>Fusil de Asalto</h2>
+        <p>Un fusil de asalto es un fusil diseñado para el combate, de fuego selectivo (capaz de disparar tanto en modo
+            automático como en modo semiautomático).1El fusil de asalto está encuadrado entre los subfusiles, que
+            emplean munición de pistola. Los dos modelos más extendidos de fusil de asalto son el AK-47 y el M16, que
+            son el ejemplo básico de su clase.7 Los fusiles semiautomáticos, como el AR-15, y los fusiles con cargador
+            limitado (de 5 a 8 balas, normalmente versiones civiles de los fusiles de asalto), no son considerados
+            fusiles de asalto por su incapacidad de hacer fuego selectivo.</p>
+
+        <table class="precios-table">
+            <tr>
+                <th>Modelo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>M 4</td>
+                <td>550 euros</td>
+                <td><button onclick="agregarCarrito(550)"> Agregar al carrito </button> <button onclick="agregarCarrito(-550)"> Eliminar del carrito </button> </td>
+
+            </tr>
+            <tr>
+                <td>Fusil básico</td>
+                <td>570 euros</td>
+                <td><button onclick="agregarCarrito(570)"> Agregar al carrito </button>   <button onclick="agregarCarrito(-570)"> Eliminar del carrito </button></td>
+            </tr>
+            <tr>
+                <td>Fusil de ráfagas</td>
+                <td>580 euros</td>
+                <td><button onclick="agregarCarrito(580)"> Agregar al carrito </button> <button onclick="agregarCarrito(-580)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>Fusil avanzado con mira</td>
+                <td>780 euros</td>
+                <td><button onclick="agregarCarrito(780)"> Agregar al carrito </button> <button onclick="agregarCarrito(-780)"> Eliminar del carrito </button> </td>
+            </tr>
+
+            <tr>
+                <td>Scar</td>
+                <td>620 euros</td>
+                <td><button onclick="agregarCarrito(620)"> Agregar al carrito </button><button onclick="agregarCarrito(-620)"> Eliminar del carrito </button>  </td>
+            </tr>
+
+        </table>
+
+        <!-- Imagenes -->
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/fusil.jpg" id="fusil">
+            <div class="precio-overlay">
+                <span>Precio:550 euros</span>
+
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/fusil2.jpg" id="fusil2">
+            <div class="precio-overlay">
+                <span>Precio:570 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/fusil4.jpg" id="fusil4">
+            <div class="precio-overlay">
+                <span>Precio:580 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/fusil5.jpg" id="fusil5">
+            <div class="precio-overlay">
+                <span>Precio: 780 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/fusil6.jpg" id="fusil6">
+            <div class="precio-overlay">
+                <span>Precio: 620 euros</span>
+            </div>
+        </div>
+
+        <a href="https://www.youtube.com/shorts/tQLJIzJOXbs"> Funcionamiento de un fusil de asalto</a>
+    </section>
+
+    <section id="precision">
+        <!-- Contenido de la sección acerca -->
+        <h2>Fusil francotirador</h2>
+        <p>El fusil de francotirador es un tipo de arma de fuego de precisión, que permite el disparo a objetivos a muy
+            larga distancia. Su utilización es habitual tanto en ejércitos como en cuerpos policiales de todo el mundo.
+            Un fusil de francotirador típico busca la mayor precisión posible en el disparo, para lo cual va equipado
+            con una mira telescópica y utiliza munición específica para el arma que permita alcanzar largas distancias
+            sin perder precisión de tiro.
+        </p>
+        <table class="precios-table">
+            <tr>
+                <th>Modelo</th>
+                <th>Precio</th>
+
+            </tr>
+            <tr>
+                <td>Francotirador marrón básico</td>
+                <td>1.800 euros</td>
+                <td><button onclick="agregarCarrito(1800)"> Agregar al carrito </button><button onclick="agregarCarrito(-1800)"> Eliminar del carrito </button>  </td>
+
+            </tr>
+            <tr>
+                <td>Francotirador negro básico</td>
+                <td>1.900 euros</td>
+                <td><button onclick="agregarCarrito(1900)"> Agregar al carrito </button><button onclick="agregarCarrito(-1900)"> Eliminar del carrito </button>  </td>
+
+            </tr>
+            <tr>
+                <td>Francotirador avanzado con apoyo gris</td>
+                <td>2.200 euros</td>
+                <td><button onclick="agregarCarrito(2200)"> Agregar al carrito </button> <button onclick="agregarCarrito(-2200)"> Eliminar del carrito </button> </td>
+
+
+            </tr>
+            <tr>
+                <td>Francotirador avanzado+</td>
+                <td>2.500 euros</td>
+                <td><button onclick="agregarCarrito(2500)"> Agregar al carrito </button> <button onclick="agregarCarrito(-2500)"> Eliminar del carrito </button> </td>
+            </tr>
+
+            <tr>
+                <td>Francotirador profesional</td>
+                <td>3.000 euros</td>
+                <td><button onclick="agregarCarrito(3000)"> Agregar al carrito </button> <button onclick="agregarCarrito(-3000)"> Eliminar del carrito </button> </td>
+            </tr>
+
+            <tr>
+                <td>Francotirador militar</td>
+                <td>3.500 euros</td>
+                <td><button onclick="agregarCarrito(3500)"> Agregar al carrito </button><button onclick="agregarCarrito(-3500)"> Eliminar del carrito </button>  </td>
+            </tr>
+
+        </table>
+
+
+        <!-- Imagenes -->
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco.jpg" id="franco">
+            <div class="precio-overlay">
+                <span>Precio: 1.800 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco2.jpg" id="franco2">
+            <div class="precio-overlay">
+                <span>Precio: 1.900 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco3.jpg" id="franco3">
+            <div class="precio-overlay">
+                <span>Precio: 2.200 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco4.jpg" id="franco4">
+            <div class="precio-overlay">
+                <span>Precio: 2.500 euros</span>
+            </div>
+        </div>
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco5.jpg" id="franco5">
+            <div class="precio-overlay">
+                <span>Precio: 3.000 euros</span>
+            </div>
+        </div>
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/franco6.jpg" id="franco6">
+            <div class="precio-overlay">
+                <span>Precio: 3.500 euros</span>
+            </div>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=r9P5Ku9Q7cE&pp=ygUYZnJhbmNvdGlyYWRvciBkaXNwYXJhbmRv"> Funcionamiento un
+            francotirador</a>
+    </section>
+
+    <section id="Subfusiles">
+        <!-- Contenido de la sección de contacto -->
+        <h2>Subfusil</h2>
+        <p>
+            Un subfusil es un tipo de arma de fuego de corto alcance que dispara cartuchos de pistola. Combina
+            características de pistolas y fusiles, siendo más compacto que un fusil pero más grande y potente que una
+            pistola. Los subfusiles son conocidos por su capacidad automática o semiautomática, lo que significa que
+            pueden disparar ráfagas continuas de disparos con un solo accionamiento del gatillo o disparar un solo
+            disparo por cada accionamiento, respectivamente.
+
+            Estas armas son comúnmente utilizadas en situaciones de combate a corta distancia, como en operaciones de
+            fuerzas especiales, asaltos tácticos o en entornos urbanos. Los subfusiles a menudo tienen cargadores de
+            gran capacidad y son más maniobrables en espacios cerrados en comparación con los fusiles de asalto
+            estándar.</p>
+
+        <table class="precios-table">
+            <tr>
+                <th>Modelo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Subfusil básico</td>
+                <td>400 euros</td>
+                <td><button onclick="agregarCarrito(400)"> Agregar al carrito </button><button onclick="agregarCarrito(-400)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>Subfusil dorado con silenciador</td>
+                <td>500 euros</td>
+                <td><button onclick="agregarCarrito(500)"> Agregar al carrito </button><button onclick="agregarCarrito(-500)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>P 90</td>
+                <td>380 euros</td>
+                <td><button onclick="agregarCarrito(380)"> Agregar al carrito </button><button onclick="agregarCarrito(-380)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+        </table>
+
+        <!-- Imagenes -->
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/subfusil.jpg" id="subfusil">
+            <div class="precio-overlay">
+                <span>Precio: 400 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/subfusil3.jpg" id="subfusil3">
+            <div class="precio-overlay">
+                <span>Precio: 500 euros</span>
+            </div>
+        </div>
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/subfusil4.jpg" id="subfusil4">
+            <div class="precio-overlay">
+                <span>Precio: 380 euros</span>
+            </div>
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=znYMx31S3oU&pp=ygUTc3ViZnVzaWwgZGlzcGFyYW5kbw%3D%3D"> Funcionamiento
+            del subfusil más potente del mundo </a>
+    </section>
+
+    <section id="semiautomático">
+        <!-- Contenido de la sección de contacto -->
+        <h2>Semiautomáticas</h2>
+        <p>Las armas semiautomáticas utilizan la energía de los gases del disparo, el empuje frontal, el empuje
+            posterior o el retroceso para eyectar el casquillo vacío después que la bala ha recorrido el cañón,
+            introducir en la recámara un nuevo cartucho desde su cargador y preparar el mecanismo de disparo,
+            permitiendo disparar de nuevo una vez que se aprieta el gatillo.</p>
+
+        <table class="precios-table">
+            <tr>
+                <th>Modelo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Fusil semiautomático básico</td>
+                <td>600 euros</td>
+                <td><button onclick="agregarCarrito(600)"> Agregar al carrito </button><button onclick="agregarCarrito(-600)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>Fusil semiautomático avanzado con silenciador</td>
+                <td>650 euros</td>
+                <td><button onclick="agregarCarrito(650)"> Agregar al carrito </button><button onclick="agregarCarrito(-650)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>Rifle semiautomático</td>
+                <td>550 euros</td>
+                <td><button onclick="agregarCarrito(550)"> Agregar al carrito </button><button onclick="agregarCarrito(-550)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>M 4 semiautomático militar</td>
+                <td>980 euros</td>
+                <td><button onclick="agregarCarrito(980)"> Agregar al carrito </button><button onclick="agregarCarrito(-980)"> Eliminar del carrito </button>  </td>
+            </tr>
+            <tr>
+                <td>Fusil semiautomático de corta distancia</td>
+                <td>580 euros</td>
+                <td><button onclick="agregarCarrito(580)"> Agregar al carrito </button> <button onclick="agregarCarrito(-580)"> Eliminar del carrito </button> </td>
+            </tr>
+        </table>
+
+
+        <!-- Imagenes -->
+
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/automatico3.jpg" id="automatico2">
+            <div class="precio-overlay">
+                <span>Precio: 600 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/automatico4.jpg" id="automatico2">
+            <div class="precio-overlay">
+                <span>Precio: 650 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/automatico5.jpg" id="automatico2">
+            <div class="precio-overlay">
+                <span>Precio: 550 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/automatico6.jpg" id="automatico2">
+            <div class="precio-overlay">
+                <span>Precio: 980 euros</span>
+            </div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="../MEDIA/IMG/automatico7.jpg" id="automatico2">
+            <div class="precio-overlay">
+                <span>Precio: 580 euros</span>
+            </div>
+        </div>
+        <a
+            href="https://www.youtube.com/watch?v=o2AHzRrcCg4&pp=ygUoZWplbXBsbyBmdXNpbCBzZW1pYXV0b23DoXRpY28gZGlzcGFyYW5kbw%3D%3D">
+            Diferencias entre fusiles de asalto y fusiles de asalto semiautomáticos </a>
+    </section>
+
+
+
+    <footer>
+        <a href="#header">Volver Arriba</a>
+    </footer>
+
+
+
+
+</body>
+
+</html>

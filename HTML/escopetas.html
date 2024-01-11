@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/escopetas.css">
+	<script src="../JS/escopetas.js"></script>
+    <title>Tu Tienda Online</title>
+</head>
+<body>
+	<header>
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+        <input id="barraBusqueda" type="text" placeholder="Buscar productos...">
+        <button id="botonBuscar" type="button">Buscar</button>
+    </div>
+
+    <!-- Header con imagen -->
+    
+        <img id="logo" src="../MEDIA/IMG/ESCOPETAS/logo.png" alt="Logo de la tienda">
+        <h1>ESCOPETAS</h1>
+    
+
+    <!-- Categorías y contenido principal -->
+    <div class="main-content">
+        <!-- Categorías -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Categorías</button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="../INDEX.html">Inicio</a>
+                <a href="fusiles.html">Fusiles</a>
+                <a href="pistolas.html">Pistolas</a>
+                <a href="escopetas.html">Escopetas</a>
+                <a href="explosivos.html">Explosivos</a>
+                <a href="extras.html">Extras</a>
+            </div>
+        </div>
+		</header>
+
+        <!-- Contenido principal -->
+        <div class="product-list">
+            
+            <h2>Escopetas a la venta:</h2>
+
+        <div class="producto" id="producto1">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta1.webp" alt="escopeta1">
+            <h3>Mosquete</h3>
+            <p>El mosquete es un arma de fuego con capacidad para una sola bala, que es capaz de infligir un gran daño.</p>
+			<h4> Precio: $19.99</h4>
+            <button onclick="agregarAlCarrito('Producto 1', 19.99)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto" id="producto2">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta2.webp" alt="escopeta2">
+            <h3>Escopeta recortada</h3>
+            <p>La escopeta recortada es una escopeta de poco alcance, pero gran daño. Además, tiene capacidad para dos cartuchos de bala.</p>
+			<h4> Precio: $29.99 </h4>
+            <button onclick="agregarAlCarrito('Producto 2', 29.99)">Añadir al carrito</button>
+        </div>
+		
+		<div class="producto" id="producto3">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta0.webp" alt="escopeta2">
+            <h3>Escopeta de corredera Mk II</h3>
+            <p>La escopeta de corredera Mk II es una versión mejorada de la escopeta de corredera, siendo un poco más potente. Además tiene capacidad para 6 cartuchos de bala.</p>
+			<h4>Precio: $49.99</h4>
+            <button onclick="agregarAlCarrito('Producto 3', 49.99)">Añadir al carrito</button>
+        </div>
+		
+		<div class="producto" id="producto4">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta3.webp" alt="escopeta3">
+            <h3>Escopeta de corredera</h3>
+            <p>La escopeta de corredera es un arma de gran daño, con un alcance medio, pero tiene capacidad de hasta 8 cartuchos de bala.</p>
+			<h4>Precio: $39.99</h4>
+            <button onclick="agregarAlCarrito('Producto 4', 39.99)">Añadir al carrito</button>
+        </div>
+		
+		<div class="producto" id="producto5">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta4.webp" alt="escopeta4">
+            <h3>Escopeta Bullpup</h3>
+            <p> La escopeta bullpull es un arma con un daño medio, pero con gran alcance. Además, destaca su capacidad para 12 cartuchos de bala.</p>
+			<h4>Precio: $59.99</h4>
+            <button onclick="agregarAlCarrito('Producto 5', 59.99)">Añadir al carrito</button>
+        </div>
+		
+		<div class="producto" id="producto6">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta5.webp" alt="escopeta5">
+            <h3>Escopeta pesada</h3>
+            <p>La escopeta pesada es una escopeta semiautomática con una gran cadencia, y funciona muy bien a medias distancias. Además, es muy efectiva contra vehículos. </p>
+			<h4>Precio: $69.99</h4>
+            <button onclick="agregarAlCarrito('Producto 6', 69.99)">Añadir al carrito</button>
+        </div>
+		
+		<div class="producto" id="producto7">
+            <img src="../MEDIA/IMG/ESCOPETAS/escopeta6.webp" alt="escopeta6">
+            <h3>Assault Shotgun</h3>
+            <p>La escopeta de asalto es una escopeta que tiene capacidades totalmente automáticas, capaz de disparar varios proyectiles en rápida sucesión. Tiene capacidad para ocho proyectiles, además de una gran cadencia de disparo.</p>
+			<h4> Precio: $79.99</h4>
+            <button onclick="agregarAlCarrito('Producto 7', 79.99)">Añadir al carrito</button>
+        </div>
+	 </section>
+
+
+        
+		<div id="cestaModal" class="modal">
+			<div class="modal-content">
+				<span class="cerrar" onclick="cerrarCestaModal()">&times;</span>
+				<h2>Cesta de Compras</h2>
+				<p>Añadido al carrito: <span id="productosAñadidos">0</span> productos</p>
+				<ul id="listaCestaModal"></ul>
+				<p>Total: $<span id="totalCestaModal">0.00</span></p>
+				<button onclick="vaciarCesta()">Vaciar Cesta</button>
+			</div>
+        </div>
+
+           
+        </div>
+    </div>
+	
+	<div id="contacto" class="formulario-contacto">
+        <h2>Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</body>
+</html>

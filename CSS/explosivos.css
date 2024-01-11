@@ -1,0 +1,379 @@
+
+    
+    body {
+      font-family: 'Arial',Arial;
+      line-height: 1.6;
+      background-color: #212121;
+      color: #0e7a71;
+      margin: 0;
+    }
+    header {
+      
+      background-color: #4F7CAC;
+      color: #7A0E10;
+      padding: 15px;
+      text-align: center;
+    }
+    
+   #total{
+	
+    width: 300px;
+    
+    height: 400px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+      
+   }
+   span#total{
+    color:green;
+   }
+   #comprarTodo {
+    padding: 10px;
+    margin: 2px;
+    display: block;
+    margin: 0 auto;
+    background-color:#7A0E10;
+    color:#4F7CAC;
+   }
+  
+   
+    #holaaa{
+	
+      padding: 7px;
+      margin: 10px;
+      border: 10px solid black;
+      font-size:60px;
+      background-color:#4F7CAC;
+        
+        
+    }
+    nav {
+     
+      background-color:#7A0E10;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4F7CAC;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+   
+    h1 {
+      color: #7A0E10;
+      text-align: center;
+      font-size: 3em;
+      margin-top: 20px;
+    }
+    #explosivos{
+        padding: 7px;
+        margin: 10px;
+        border: 10px solid black;
+        font-size:60px;
+        background-color:#4F7CAC;
+        
+        :hover {
+            color: green;
+            font-size:2 px;
+        }
+       
+    }
+
+    #explosivos:hover {
+        color: green;
+        font-size:2 px;
+    }
+    p {
+      color: #4969ad;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      color:#4969ad;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 350px;
+      background-color:#4F7CAC;
+      height: 500px;
+      border: 1px solid black;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 5px 5px 5px rgb(125, 50, 50);
+    }
+    .card {
+      margin :10px;
+      color: #4F7CAC;
+      
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      color: rgb(0, 0, 0);
+      text-align: left;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .card p {
+      color: black;
+      text-align: left;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .card span {
+      color: rgb(99, 203, 99);
+      text-align: left;
+      font-size: 19px;
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      
+    }
+
+    .card button {
+      width: 100%;
+      height: 40px;
+      background-color: red;
+      color: #212121;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .card button:hover {
+      background-color: darkred;
+    }
+
+
+
+
+    .volver-boton {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+       
+    .volver-boton a {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #b9bbbe;
+     color: #2c2f33;
+     text-decoration: none;
+     border-radius: 5px;
+     font-size: 16px;
+    }
+       
+    .volver-boton a:hover {
+     background-color: #f1f1f1;
+     color: #2c2f33;
+    }
+    
+    
+    #closeButton{
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #67d572;
+     color: #2c2f33;
+     text-decoration: none;
+     border-radius: 5px;
+     font-size: 16px;
+   
+      
+       
+    }
+    .container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    
+    .container img {
+      flex-shrink: 0;
+      width:100%; /* o el tamaño que prefieras */
+      height:auto; 
+      scroll-snap-align: start;
+    }
+    
+
+   
+
+    #videoContainer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer2 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer3 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer4 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer5 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer6 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #videoContainer11 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer22 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+    #videoContainer33 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #videoFrame {
+      width: 70%;
+      height: 70%;
+    }
+    #videoFrame2 {
+     width: 70%;
+     height: 70%;
+    }
+    #videoFrame3 {
+     width: 70%;
+     height: 70%;
+    }
+    #videoFrame4 {
+      width: 70%;
+      height: 70%;
+    }
+    #videoFrame5 {
+     width: 70%;
+     height: 70%;
+    }
+    #videoFrame6 {
+      width: 70%;
+      height: 70%;
+    }
+    
+    #videoFrame11 {
+      width: 70%;
+      height: 70%;
+     }
+     #videoFrame22 {
+      width: 70%;
+      height: 70%;
+     }
+     #videoFrame33 {
+      width: 70%;
+      height: 70%;
+     }
+  
+
+    #closeButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+     
+    }  
+    .videoContainer button {
+     width: 100%;
+     height: 40px;
+     background-color: rgb(38, 0, 255);
+     color: white;
+     font-size: 16px;
+     
+    
+     margin-top: 10px;
+    }
+
+
+
+
+  
